@@ -28,18 +28,23 @@ document.getElementById("nuova_lista").innerHTML += (i+1) +  cognomiMaiuscoli[i]
 
 
 // 4. scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
-var check = false;
-var y = 0;
 
-while ( y < cognomiMaiuscoli.length || check == false) {
-    if (tuoCognome.toUpperCase() == cognomiMaiuscoli[y]) {
-        y=y+1;
-        console.log("Il tuo cognome è in posizione " + y);
-        document.getElementById("posizione").innerHTML = "Il tuo cognome è in posizione: " + y;
+// var check = false;
+// var y = 0;
 
-        check = true;
-    } else {
-        console.log("non è qui");
-        y++
-    }
+// while ( y < cognomiMaiuscoli.length || check == false) {
+//     if (tuoCognome.toUpperCase() == cognomiMaiuscoli[y]) {
+//         y=y+1;
+//         console.log("Il tuo cognome è in posizione " + y);
+//         document.getElementById("posizione").innerHTML = "Il tuo cognome è in posizione: " + y;
+
+//         check = true;
+//     } else {
+//         // console.log("non è qui");
+//         y++
+//     }
+// }
+
+for (i=0; i < cognomiMaiuscoli.length; i++) {
+    console.log((i+1) + cognomiMaiuscoli[i]);
 }
